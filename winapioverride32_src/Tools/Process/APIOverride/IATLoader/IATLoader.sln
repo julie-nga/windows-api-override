@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IATLoader", "IATLoader.vcxproj", "{64036262-AF5B-4890-83D2-60155CB6ECE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Debug|Win32.Build.0 = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Release|Win32.ActiveCfg = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

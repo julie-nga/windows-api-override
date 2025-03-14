@@ -1,1 +1,0 @@
-EXE_INTERNAL@0x4010A0|RotateRegisters();|InOut

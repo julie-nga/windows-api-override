@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugUnicode|Win32">
+      <Configuration>DebugUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode|Win32">
+      <Configuration>ReleaseUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>DebugInfosViewer</ProjectName>
+    <ProjectGuid>{D1B00101-6964-4EE1-8C89-42D01E40ECCE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DebugInfosViewer.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)DebugInfos.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DebugInfosViewer.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DebugInfosViewer.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)DebugInfos.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DebugInfosViewer.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="about.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\DebugInfos.cpp" />
+    <ClCompile Include="DebugInfosUI.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\FunctionBlockInfos.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\FunctionInfos.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\LabelInfos.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\ModuleInfos.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\regs.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\SymbolLocation.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\ThunkInfos.cpp" />
+    <ClCompile Include="..\DebugInfosClasses\TypeInfos.cpp" />
+    <ClCompile Include="UserTypesGenerator.cpp" />
+    <ClCompile Include="..\..\String\AnsiUnicodeConvert.cpp" />
+    <ClCompile Include="..\..\APIError\APIError.cpp" />
+    <ClCompile Include="..\..\Clipboard\Clipboard.cpp" />
+    <ClCompile Include="..\..\Gui\Dialog\DialogHelper.cpp" />
+    <ClCompile Include="..\..\Disasm\Disasm.cpp" />
+    <ClCompile Include="..\..\Dll\DllFinder.cpp" />
+    <ClCompile Include="..\..\Dll\DllSideBySideAssembyFinder.cpp" />
+    <ClCompile Include="..\..\Gui\HtmlViewer\HtmlViewerWindow.cpp" />
+    <ClCompile Include="..\..\LinkList\LinkList.cpp" />
+    <ClCompile Include="..\..\LinkList\LinkListBase.cpp" />
+    <ClCompile Include="..\..\LinkList\SingleThreaded\LinkListBaseSingleThreaded.cpp" />
+    <ClCompile Include="..\..\LinkList\LinkListSimple.cpp" />
+    <ClCompile Include="..\..\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.cpp" />
+    <ClCompile Include="..\..\LinkList\LinkListTemplate.cpp" />
+    <ClCompile Include="..\..\Pe\PE.cpp" />
+    <ClCompile Include="..\..\Dll\PeManifestAssembly.cpp" />
+    <ClCompile Include="..\..\Gui\Menu\PopUpMenu.cpp" />
+    <ClCompile Include="..\..\Com\RegisterComComponent.cpp" />
+    <ClCompile Include="..\..\File\StdFileOperations.cpp" />
+    <ClCompile Include="..\..\String\StringConverter.cpp" />
+    <ClCompile Include="..\..\String\StringReplace.cpp" />
+    <ClCompile Include="..\..\Gui\SysLink\SysLink.cpp" />
+    <ClCompile Include="..\..\File\TextFile.cpp" />
+    <ClCompile Include="..\..\Gui\ToolBar\Toolbar.cpp" />
+    <ClCompile Include="..\..\Gui\TreeView\Treeview.cpp" />
+    <ClCompile Include="..\..\String\TrimString.cpp" />
+    <ClCompile Include="..\..\Version\Version.cpp" />
+    <ClCompile Include="..\..\String\WildCharCompare.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="about.h" />
+    <ClInclude Include="..\DebugInfosClasses\callback.h" />
+    <ClInclude Include="..\DebugInfosClasses\DebugInfos.h" />
+    <ClInclude Include="DebugInfosUI.h" />
+    <ClInclude Include="..\DebugInfosClasses\FunctionBlockInfos.h" />
+    <ClInclude Include="..\DebugInfosClasses\FunctionInfos.h" />
+    <ClInclude Include="..\DebugInfosClasses\LabelInfos.h" />
+    <ClInclude Include="..\DebugInfosClasses\ModuleInfos.h" />
+    <ClInclude Include="..\DebugInfosClasses\regs.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\DebugInfosClasses\SymbolLocation.h" />
+    <ClInclude Include="..\DebugInfosClasses\ThunkInfos.h" />
+    <ClInclude Include="..\DebugInfosClasses\TypeInfos.h" />
+    <ClInclude Include="UserTypesGenerator.h" />
+    <ClInclude Include="..\..\String\AnsiUnicodeConvert.h" />
+    <ClInclude Include="..\..\APIError\APIError.h" />
+    <ClInclude Include="..\..\Clipboard\Clipboard.h" />
+    <ClInclude Include="..\..\Process\APIOverride\injected_dll\defines.h" />
+    <ClInclude Include="..\..\Gui\Dialog\DialogHelper.h" />
+    <ClInclude Include="..\..\Disasm\Disasm.h" />
+    <ClInclude Include="..\..\Dll\DllFinder.h" />
+    <ClInclude Include="..\..\Dll\DllSideBySideAssembyFinder.h" />
+    <ClInclude Include="..\..\Gui\HtmlViewer\HtmlViewerWindow.h" />
+    <ClInclude Include="..\..\LinkList\LinkList.h" />
+    <ClInclude Include="..\..\LinkList\LinkListBase.h" />
+    <ClInclude Include="..\..\LinkList\SingleThreaded\LinkListBaseSingleThreaded.h" />
+    <ClInclude Include="..\..\LinkList\LinkListSimple.h" />
+    <ClInclude Include="..\..\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.h" />
+    <ClInclude Include="..\..\LinkList\LinkListTemplate.h" />
+    <ClInclude Include="..\..\Pe\PE.h" />
+    <ClInclude Include="..\..\Dll\PeManifestAssembly.h" />
+    <ClInclude Include="..\..\Gui\Menu\PopUpMenu.h" />
+    <ClInclude Include="..\..\Com\RegisterComComponent.h" />
+    <ClInclude Include="..\..\File\StdFileOperations.h" />
+    <ClInclude Include="..\..\String\StringConverter.h" />
+    <ClInclude Include="..\..\String\StringReplace.h" />
+    <ClInclude Include="..\..\Gui\SysLink\SysLink.h" />
+    <ClInclude Include="..\..\File\TextFile.h" />
+    <ClInclude Include="..\..\Gui\ToolBar\Toolbar.h" />
+    <ClInclude Include="..\..\Gui\TreeView\Treeview.h" />
+    <ClInclude Include="..\..\String\TrimString.h" />
+    <ClInclude Include="..\..\Version\Version.h" />
+    <ClInclude Include="..\..\String\WildCharCompare.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\About.ico" />
+    <None Include="resource\asm.ico" />
+    <None Include="resource\check_all.ico" />
+    <None Include="resource\check_partial.ico" />
+    <None Include="resource\collapse.ico" />
+    <None Include="resource\empty.ico" />
+    <None Include="resource\expand.ico" />
+    <None Include="resource\export.ico" />
+    <None Include="resource\function.ico" />
+    <None Include="resource\generate.ico" />
+    <None Include="resource\local.ico" />
+    <None Include="resource\obj.ico" />
+    <None Include="resource\open.ico" />
+    <None Include="resource\param.ico" />
+    <None Include="resource\paypal.ico" />
+    <None Include="resource\thunk.ico" />
+    <None Include="resource\uncheck_all.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DebugInfos.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="resource\DebugInfosViewer.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
